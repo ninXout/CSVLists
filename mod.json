@@ -1,0 +1,22 @@
+{
+	"geode": "4.3.1",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "ninxout.jamesmod",
+	"name": "JamesMod",
+	"version": "v1.0.0",
+	"developer": "ninXout",
+	"description": "jett james mod",
+	"settings": {
+		"instant-scroll": {
+			"type": "bool",
+			"name": "Disable Scroll Animation",
+			"description": "Remove the scroll animation and instead make scrolling to the top or bottom of a list instant.",
+			"default": false
+		}
+	}
+}
