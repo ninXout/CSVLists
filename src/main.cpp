@@ -20,6 +20,11 @@ class $modify(CSVListLayer, LevelListLayer) {
 		static_cast<CCMenu*>(getChildByID("right-side-menu"))->addChild(btn);
 		static_cast<CCMenu*>(getChildByID("right-side-menu"))->updateLayout();
 
+		if (Mod::get()->getSettingValue<bool>("move-delete-button")) {
+			CCNode* removeBtn = static_cast<CCMenu*>(getChildByID("button-menu"))->getChildByID("small-info-button");
+			removeBtn->setPositionY(removeBtn->getPositionY() - 40.f);
+		}
+
 		return true;
 	}
 
